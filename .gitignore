@@ -1,0 +1,8 @@
+﻿/.idea/.idea.GarageSpace/.idea/
+/GarageSpace.EventBus.SDK.sln.DotSettings.user
+/src/GarageSpace/bin
+/src/GarageSpace/obj
+/src/GarageSpace.*/bin
+/src/GarageSpace.*/obj
+/.vs
+/obj
