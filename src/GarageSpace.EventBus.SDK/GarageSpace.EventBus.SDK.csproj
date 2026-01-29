@@ -1,14 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="GarageSpace.Contracts" Version="0.2.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
-  </ItemGroup>
+	<PropertyGroup>
+		<PackageId>GarageSpace.EventBus.SDK</PackageId>
+		<Version>0.0.1</Version>
+		<Authors>Vlad Taran</Authors>
+		<Description>A .NET Event Bus SDK built on RabbitMQ that simplifies publishing and consuming integration events, supports message serialization, retry handling, and scalable event-driven architectures.</Description>
+		<PackageTags>dotnet;microservices;contracts;events;rabbitmq</PackageTags>
+		<RepositoryUrl>https://github.com/vladtaran/GarageSpace.EventBus.SDK</RepositoryUrl>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="GarageSpace.Contracts" Version="0.2.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+	</ItemGroup>
 
 </Project>
