@@ -1,4 +1,4 @@
-﻿using GarageSpace.Contracts.Interfaces;
+using GarageSpace.Contracts.Interfaces;
 using GarageSpace.EventBus.SDK.Abstractions;
 
 namespace GarageSpace.EventBus.SDK

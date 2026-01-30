@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GarageSpace.EventBus.TestApp": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

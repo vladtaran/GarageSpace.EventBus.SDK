@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
@@ -19,7 +19,10 @@
 
 	<ItemGroup>
 		<PackageReference Include="GarageSpace.Contracts" Version="0.2.1" />
+		<PackageReference Include="MassTransit" Version="9.0.0" />
+		<PackageReference Include="MassTransit.RabbitMQ" Version="9.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
 	</ItemGroup>
 
 </Project>
