@@ -5,7 +5,9 @@ VisualStudioVersion = 17.14.36915.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageSpace.EventBus.SDK", "src\GarageSpace.EventBus.SDK\GarageSpace.EventBus.SDK.csproj", "{F397F276-511A-49EC-AAF3-ED4B9A136938}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageSpace.EventBus.TestApp", "src\GarageSpace.EventBus.TestApp\GarageSpace.EventBus.TestApp.csproj", "{4384207C-9E84-4E94-8F4A-873DA8FA2296}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageSpace.EventBus.TestApp.Publisher", "src\GarageSpace.EventBus.TestApp.Publisher\GarageSpace.EventBus.TestApp.Publisher.csproj", "{4384207C-9E84-4E94-8F4A-873DA8FA2296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageSpace.EventBus.TestApp.Consumer", "src\GarageSpace.EventBus.TestApp.Consumer\GarageSpace.EventBus.TestApp.Consumer.csproj", "{561662BB-DB56-4932-ADE4-6C118149E0A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4384207C-9E84-4E94-8F4A-873DA8FA2296}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4384207C-9E84-4E94-8F4A-873DA8FA2296}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4384207C-9E84-4E94-8F4A-873DA8FA2296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{561662BB-DB56-4932-ADE4-6C118149E0A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561662BB-DB56-4932-ADE4-6C118149E0A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561662BB-DB56-4932-ADE4-6C118149E0A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561662BB-DB56-4932-ADE4-6C118149E0A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

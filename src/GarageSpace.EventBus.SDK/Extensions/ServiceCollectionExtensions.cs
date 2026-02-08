@@ -18,16 +18,43 @@ namespace GarageSpace.EventBus.SDK.Extensions
                 x.UsingRabbitMq((context, cfg) =>
                 {
                     var options = context.GetRequiredService<IOptions<EventBusConfiguration>>().Value;
-                    var conn = options.ConnectionString;
-                    cfg.Host(conn.Host, conn.Scheme ?? "rabbitmq", h =>
+                    cfg.Host(options.Host, "/", h =>
                     {
-                        h.Username(conn.Name);
-                        h.Password(conn.Password);
+                        h.Username(options.Name);
+                        h.Password(options.Password);
                     });
                 });
             });
 
             services.AddScoped<IEventBusPublisher, EventBusPublisher>();
+
+            return services;
+        }
+
+        public static IServiceCollection AddMassTransitConsumers(this IServiceCollection services, IConfiguration configuration, Action<IRegistrationConfigurator> registerConsumers)
+        {
+            services.Configure<EventBusConfiguration>(
+                configuration.GetSection("EventBusConfiguration"));
+
+            services.AddMassTransit(x =>
+            {
+                registerConsumers(x);
+
+                x.UsingRabbitMq((context, cfg) =>
+                {
+                    var options = context
+                        .GetRequiredService<IOptions<EventBusConfiguration>>()
+                        .Value;
+
+                    cfg.Host(options.Host, "/", h =>
+                    {
+                        h.Username(options.Name);
+                        h.Password(options.Password);
+                    });
+
+                    cfg.ConfigureEndpoints(context);
+                });
+            });
 
             return services;
         }
