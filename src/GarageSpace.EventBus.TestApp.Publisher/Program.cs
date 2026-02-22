@@ -22,6 +22,14 @@ IEventBusPublisher publisher = scope.ServiceProvider.GetRequiredService<IEventBu
 
 var msgPublisher = new MessagePublisher(publisher);
 
-await msgPublisher.PublishMessage();
+while (true) 
+{
+    string input = Console.ReadLine();
+
+    switch (input)
+    {
+        case "1": await msgPublisher.PublishUserBlogFollowedEvent(); break;
+    }
+}
 
 await host.RunAsync();
