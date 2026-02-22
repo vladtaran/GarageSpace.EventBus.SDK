@@ -11,7 +11,7 @@ namespace GarageSpace.EventBus.TestApp.Publisher
             _publisher = publisher;
         }
 
-        public async Task PublishMessage() 
+        public async Task PublishUserBlogFollowedEvent() 
         {
             var msg = new UserBlogFollowedEvent
             {
